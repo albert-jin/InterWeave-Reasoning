@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Logs and runtime outputs
+*.log
+logs/
+runs/
+outputs/
+tmp/
+temp/
+
+# Experiment outputs
+results/
+eval_results/
+wandb/
+tensorboard/
+*.jsonl.tmp
+
+# Large generated archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Model and checkpoint byproducts
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+*.pt
+checkpoints/
+
+# Keep curated small controller checkpoints if explicitly added, but ignore
+# ad-hoc training byproducts under checkpoint directories.
+ppo_checkpoints/**/events.*
+ppo_checkpoints/**/*.log
+ppo_checkpoints/**/*.jsonl
+ppo_checkpoints/**/optimizer*.pth
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Upstream SGLang development material kept out of this paper artifact
+sglang_soft_thinking_pkg/.clang-format-ignore
+sglang_soft_thinking_pkg/.devcontainer/
+sglang_soft_thinking_pkg/.editorconfig
+sglang_soft_thinking_pkg/.github/
+sglang_soft_thinking_pkg/.gitignore
+sglang_soft_thinking_pkg/.isort.cfg
+sglang_soft_thinking_pkg/.pre-commit-config.yaml
+sglang_soft_thinking_pkg/3rdparty/
+sglang_soft_thinking_pkg/Makefile
+sglang_soft_thinking_pkg/README.md
+sglang_soft_thinking_pkg/README_original.md
+sglang_soft_thinking_pkg/assets/
+sglang_soft_thinking_pkg/benchmark/
+sglang_soft_thinking_pkg/change_0.4.6.post1.diff
+sglang_soft_thinking_pkg/docker/
+sglang_soft_thinking_pkg/docs/
+sglang_soft_thinking_pkg/examples/
+sglang_soft_thinking_pkg/scripts/
+sglang_soft_thinking_pkg/sgl-kernel/
+sglang_soft_thinking_pkg/sgl-router/
+sglang_soft_thinking_pkg/test/
+sglang_soft_thinking_pkg/python/sglang/test/
+sglang_soft_thinking_pkg/python/sglang/bench_*.py
+sglang_soft_thinking_pkg/python/sglang/llama3_eval.py
+*.egg-info/
