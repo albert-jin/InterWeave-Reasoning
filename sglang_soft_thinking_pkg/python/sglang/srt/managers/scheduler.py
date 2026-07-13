@@ -137,7 +137,7 @@ import torch.nn.functional as F  # <-- (PPO): 新增
 import torch.optim as optim
 from transformers import AutoConfig
 import matheval                   # <-- (PPO): 新增
-# 假设 ppo_agent_model.py 在 Hybrid-Thinking 根目录
+# 假设 ppo_agent_model.py 在 InterWeave Reasoning 项目根目录
 import sys
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../../../.."))
 if project_root not in sys.path:

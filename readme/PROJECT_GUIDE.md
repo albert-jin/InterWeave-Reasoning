@@ -16,9 +16,9 @@ This note maps the paper components to the codebase.
 | Batch scripts | `scripts/train_interweave_controller.sh`, `scripts/eval_interweave_math.sh`, `scripts/eval_interweave_code.sh` |
 | Paper figures | `sources/` |
 
-## Naming Compatibility
+## Naming Notes
 
-Several low-level arguments and fields are still named `soft_thinking`, especially inside the patched SGLang backend. They are retained for compatibility with the inherited backend. In this repository, the user-facing interpretation is:
+Several low-level arguments and fields are named `soft_thinking` because InterWeave runs on the shared soft-reasoning SGLang runtime. In this repository, the user-facing interpretation is:
 
 - `force_mode=soft`: always use latent exploration.
 - `force_mode=hard`: always use symbolic grounding.

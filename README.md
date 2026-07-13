@@ -43,7 +43,7 @@ Standard chain-of-thought decoding commits to one discrete token at every step. 
 └── readme/                            # Additional project notes
 ```
 
-The internal SGLang switch is still named `enable_soft_thinking` for backward compatibility with the patched backend. In this repository, enabling that switch activates the InterWeave latent-token path and PPO mode-arbitration hooks.
+The SGLang runtime exposes the soft-reasoning switch as `enable_soft_thinking`. InterWeave uses that shared soft runtime to activate latent-token injection and PPO mode-arbitration hooks.
 
 ## Installation
 

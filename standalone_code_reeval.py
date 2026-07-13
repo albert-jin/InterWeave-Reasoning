@@ -193,7 +193,6 @@ def evaluate_livecodebench(filepath, base_dir):
     convert_json(input_file=filepath, output_file=converted_file)
 
     possible_pkg_paths = [
-        "/root/shared-nvme/gj/Hybrid-Thinking/LiveCodeBench_pkg",
         "LiveCodeBench_pkg",
         "../LiveCodeBench_pkg",
         os.path.join(base_dir, "LiveCodeBench_pkg")

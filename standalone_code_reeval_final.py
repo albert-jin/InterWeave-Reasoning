@@ -232,7 +232,6 @@ def evaluate_livecodebench(filepath, base_dir):
 
     # 1. 寻找本地代码包
     possible_pkg_paths = [
-        "/root/shared-nvme/gj/Hybrid-Thinking/LiveCodeBench_pkg",
         "LiveCodeBench_pkg",
         "../LiveCodeBench_pkg",
         os.path.join(base_dir, "LiveCodeBench_pkg")

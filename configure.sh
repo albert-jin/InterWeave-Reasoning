@@ -4,8 +4,8 @@ pip install torch transformers accelerate jsonlines math_verify openai torch_mem
 pip install "datasets<4.0.0"
 pip install flash_attn --no-build-isolation
 
-# Install SGLang (0.4.6.post1) patched for InterWeave latent-token injection.
-# The directory keeps its historical name for backend compatibility.
+# Install SGLang (0.4.6.post1) patched for the shared soft-reasoning
+# runtime used by InterWeave latent-token injection.
 cd sglang_soft_thinking_pkg
 pip install -e "python[all]"
 cd ..

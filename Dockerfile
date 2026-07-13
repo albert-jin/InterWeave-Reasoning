@@ -58,9 +58,8 @@ COPY ../LiveCodeBench_pkg /workspace/LiveCodeBench_pkg
 RUN cd /workspace/LiveCodeBench_pkg \
     && python -m pip install -e .
 
-# Patched SGLang backend used by InterWeave Reasoning for latent-token
-# injection and learned mode arbitration. The directory keeps its historical
-# name for compatibility with the inherited backend patch.
+# Patched SGLang backend used by InterWeave Reasoning for the shared
+# soft-reasoning runtime, latent-token injection, and learned mode arbitration.
 COPY sglang_soft_thinking_pkg/python /workspace/sglang
 RUN cd /workspace/sglang \
     && python -m pip install -e .

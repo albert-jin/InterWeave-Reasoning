@@ -156,7 +156,7 @@ def main():
     parser.add_argument('--dataset_path', type=str, default="./datasets/train_gsm8k.json",
                         help='Path to training JSON file (主训练集 M)')
     parser.add_argument('--eval_dataset_path', type=str,
-                        default="/root/shared-nvme/gj/Hybrid-Thinking/datasets/gsm8k.json",
+                        default="datasets/gsm8k.json",
                         help='Path to validation JSON file')
 
     parser.add_argument('--num_steps', type=int, default=1000, help='外循环总步数 (总共训练的批次数)')
